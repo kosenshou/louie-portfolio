@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import Image from "next/image";
 import { HTMLAttributes } from "react";
 import { GithubLogo } from "./icons";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -23,21 +24,20 @@ const About = () => {
               Passionate about creating impactful web experiences
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              With over 5 years of experience in full-stack development, I
-              specialize in building scalable web applications using modern
-              technologies. My expertise includes React, Node.js, and cloud
-              architecture. I&apos;m passionate about creating elegant solutions
-              to complex problems and sharing knowledge with the developer
-              community.
+              I&apos;m a full-stack software engineer specializing in building fast, scalable, and intuitive web applications. I work across the entire stack—from designing clean, responsive UIs to architecting robust backends and API integrations. My experience spans modern frameworks like Next.js, React, TypeScript, Prisma, and Express, as well as mobile development using Kotlin, Swift, and Flutter.
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
-              <Button className="rounded-full">
-                <GithubLogo />
-                View Github
+              <Button asChild className="rounded-full">
+                <Link href="https://github.com/kosenshou" target="_blank">
+                  <GithubLogo />
+                  View Github
+                </Link>
               </Button>
-              <Button variant="outline" className="rounded-full">
-                <Download />
-                Download CV
+              <Button asChild variant="outline" className="rounded-full">
+                <Link href="/resume-with-cover-letter.pdf" target="_blank">
+                  <Download />
+                  Download CV
+                </Link>
               </Button>
             </div>
           </div>
@@ -53,7 +53,7 @@ const ProfileImage = ({
 }: HTMLAttributes<HTMLDivElement>) => (
   <div className={cn("mt-10 w-48 h-48 md:w-64 md:h-64", className)} {...props}>
     <div className="relative w-full h-full rounded-2xl overflow-hidden bg-accent">
-      <Image src="/placeholder.svg" alt="" className="object-cover" fill />
+      <Image src="/profile.jpg" alt="" className="object-cover" fill />
     </div>
   </div>
 );

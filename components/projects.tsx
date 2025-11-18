@@ -53,7 +53,7 @@ const ProjectCard = ({
             <Button variant="default" className="rounded-full" asChild>
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
+                Website
               </a>
             </Button>
           )}
@@ -78,40 +78,35 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Metricos",
       description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
+        "Collect data from your digital marketing. Connect accounts like shopify, meta, google ads.",
+      image: "/projects/metricos.png",
+      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "ShadcnUI"],
+      liveUrl: "https://metricos.io/",
     },
     {
-      title: "AI Task Manager",
+      title: "Roni Ai",
       description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
+        "Accounting system that uses AI to categorize business transactions and provide detailed financial reports for your company.",
+      image: "/projects/roni-ai.png",
+      technologies: ["Next.js", "MongoDB", "OpenAI", "Tesseract.js"],
+      liveUrl: "https://www.roni.ai",
     },
     {
-      title: "Real-time Chat Application",
+      title: "Giving Hero",
       description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
+        "Accept online donations through a payment gateway that directly goes to a chosen nonprofit organization.",
+      image: "/projects/giving-hero.png",
+      technologies: ["React", "Node.js", "Paynamics", "MochaJS (Unit Test)"],
     },
     {
-      title: "AI Image Generator",
+      title: "SHDA Portal",
       description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
+        "A web messaging platform for architech and engineers to connect with local construction suppliers.",
+      image: "/projects/shda.png",
+      technologies: ["React", "Laravel", "Tailwind"],
+      liveUrl: "https://portal.shda.ph/",
     },
   ];
 
